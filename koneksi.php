@@ -1,7 +1,7 @@
 <?php
 $servernameku = "localhost";
 $username = "root";
-$dbname = "travel";
+$dbname = "dbprambanan";
 $password = "";
 
 // Create connection

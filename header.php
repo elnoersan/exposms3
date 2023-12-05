@@ -5,11 +5,14 @@ session_start();
     header('location:login.php');
 }
 ?>
+
+
 <?php
 include "koneksi.php";
 $prevQuery = mysqli_query($conn, "SELECT username FROM admin WHERE id_admin = $_SESSION[admin]");
 $row = mysqli_fetch_array($prevQuery, MYSQLI_ASSOC);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,7 +98,7 @@ $row = mysqli_fetch_array($prevQuery, MYSQLI_ASSOC);
     <!-- Brand Logo -->
     <a href="index2.php" class="brand-link">
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">TourNest</span>
+      <span class="brand-text font-weight-light">De Prambanan Tour</span>
     </a>
 
     <!-- Sidebar -->

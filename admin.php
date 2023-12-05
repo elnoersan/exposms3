@@ -34,7 +34,7 @@ include "header.php";
             <div class="small-box bg-success">
               <div class="inner">
                 <?php
-                $query = mysqli_query($conn, "SELECT COUNT(id_berita) as jumlah FROM berita");
+                $query = mysqli_query($conn, "SELECT COUNT(id_wisata) as jumlah FROM wisata");
                 $dataBerita = mysqli_fetch_array($query, MYSQLI_ASSOC);
                 ?>
 
